@@ -10,20 +10,61 @@
   font-weight: 400;
   font-style: normal;
 }
-:root{
-    --primary-bg-color: #000000;
-    --secondary-bg-color: #222222;
-    --secondary-brand-color: #E6533C;
-    --text-1: #FFFFFF;
-    --text-2: #ffffff85;
-    --hero-bg-1:#11111100;
-    --hero-bg-2:#777777;
-
-    
+:root {
+  --primary-bg-color: #000000;
+  --secondary-bg-color: #222222;
+  --secondary-brand-color: #e6533c;
+  --text-1: #ffffff;
+  --text-2: #ffffff85;
+  --hero-bg-1: #11111100;
+  --hero-bg-2: #777777;
 }
-body{
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    padding: 0 190px;
+body {
+  color: var(--text-1);
+}
+/* Shared CSS ------------- */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* HEADER ----------------- */
+header {
+  background: linear-gradient(#000000, #222222, #000000);
+  max-height: 100vh;
+}
+.header-context {
+  max-width: 100%;
+  max-height: 100%;
+}
+.header-container nav {
+  /* background-color: #777777; */
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.header-container nav h1{
+    color: var(--secondary-brand-color);
+    font-style: italic;
+}
+.menu{
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    border: 1px solid var(--text-2);
+    border-radius: 12px;
+    /* padding: 3px 0; */
+    /* padding-right: 9px; */
+}
+.menu a{
+    text-decoration: none;
+    color: var(--text-1);
+    background-color: var(--secondary-brand-color);
+    padding: 6px 7px;
+    border-radius: 12px;
+    
 }
