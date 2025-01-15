@@ -51,6 +51,9 @@ body {
   cursor: pointer;
   font-size: 17px;
 }
+.section-title {
+  font-size: 48px;
+}
 /* HEADER ----------------- */
 header {
   background: linear-gradient(#000000, #222222, #000000);
@@ -93,6 +96,9 @@ header {
 }
 .menu a:nth-child(1) {
   background-color: var(--secondary-brand-color);
+}
+.menu-icon {
+  display: none;
 }
 .banar {
   display: flex;
@@ -153,7 +159,8 @@ header {
   right: 200px;
   width: 180px;
   height: 95px;
-  border-radius: 18px;
+  border-radius: 5px;
+  border: 1px solid var(--hero-bg-2);
   padding: 10px 12px;
   backdrop-filter: blur(6px);
   /* padding: 20px 80px; */
@@ -185,7 +192,8 @@ header {
   right: -80px;
   width: 180px;
   height: 95px;
-  border-radius: 18px;
+  border-radius: 5px;
+  border: 1px solid var(--hero-bg-2);
   padding: 10px 12px;
   backdrop-filter: blur(6px);
   /* padding: 20px 80px; */
@@ -199,3 +207,5 @@ header {
 .workout p {
   color: var(--text-2);
 }
+
+/* Chnage Your Habits */
