@@ -111,13 +111,14 @@ header {
 }
 
 .title {
-  font-size: clamp(26px, 8em, 76px);
-  line-height: 90px;
+  font-size: clamp(26px, 6vw, 76px);
+  --font-size: clamp(26px, 6vw, 76px);
+  line-height: calc(var(--font-size) * 1.2);
   font-weight: 800;
 }
 
 .title span {
-  font-size: 96px;
+  font-size: clamp(36px, 7vw, 96px);
   letter-spacing: 5px;
 }
 .call-to-actions {
@@ -171,10 +172,10 @@ header {
   flex-direction: column;
   align-items: flex-start;
 }
-.video p{
+.video p {
   color: var(--text-2);
 }
-.glasses .workout{
+.glasses .workout {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -192,9 +193,9 @@ header {
 
   background-color: #ffffff10;
 }
-.workout h3{
+.workout h3 {
   font-size: 32px;
 }
-.workout p{
+.workout p {
   color: var(--text-2);
 }
