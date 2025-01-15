@@ -23,7 +23,7 @@
     padding: 0;
     grid-template-columns: 5fr 1fr;
   }
-  .header-container nav h1{
+  .header-container nav h1 {
     margin: 0;
   }
   .glasses .video {
@@ -53,13 +53,26 @@
     width: 120px;
     height: 60px;
     padding: 10px 12px;
-
-    }
+  }
   .workout h3 {
     font-size: 18px;
   }
   .workout p {
     color: var(--text-2);
+    font-size: 12px;
+  }
+  /* Chnage Your Habits */
+  .habits-4 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .habit{
+    width: 50%;
+  }
+  .habit > img {
+    width: 100%;
+  }
+  .habit p{
     font-size: 12px;
   }
 }

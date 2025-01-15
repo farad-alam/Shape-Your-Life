@@ -44,4 +44,21 @@
     font-size: clamp(36px, 8vw, 96px);
     letter-spacing: 5px;
   }
+  /* Chnage Your Habits */
+  .ch-intro {
+    width: 80%;
+  }
+
+  .habits-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .habit {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+  }
+  .habit > img {
+    width: 100%;
+  }
 }

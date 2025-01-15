@@ -53,6 +53,7 @@ body {
 }
 .section-title {
   font-size: 48px;
+  font-size: clamp(20px, 4vw, 48px);
 }
 /* HEADER ----------------- */
 header {
@@ -209,3 +210,47 @@ header {
 }
 
 /* Chnage Your Habits */
+
+#chnage-your-habits {
+  background-color: var(--primary-bg-color);
+  position: relative;
+}
+.change-habit-context {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.ch-intro {
+  width: 52%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.ch-desc {
+  margin-top: 20px;
+}
+.habits-4 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-between; */
+}
+.habit {
+  padding: 20px 15px;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.158), 0 6px 20px 0 rgba(216, 215, 215, 0.13);
+}
+.habit > img {
+  width: 100%;
+  clip-path: circle();
+  margin-bottom: 20px;
+  border: 5px solid var(--hero-bg-2);
+  border-radius: 50%;
+  /* text-align: center; */
+}
+.habit-title {
+  margin-bottom: 6px;
+}
