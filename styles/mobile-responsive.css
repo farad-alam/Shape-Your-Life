@@ -75,4 +75,10 @@
   .habit p{
     font-size: 12px;
   }
+  /* Run Extra Mile  */
+  .run-extra-mile-context{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
 }

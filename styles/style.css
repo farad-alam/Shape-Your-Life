@@ -241,7 +241,8 @@ header {
   align-self: center;
   justify-self: center;
   justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.158), 0 6px 20px 0 rgba(216, 215, 215, 0.13);
+  box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.158),
+    0 6px 20px 0 rgba(216, 215, 215, 0.13);
 }
 .habit > img {
   width: 100%;
@@ -253,4 +254,122 @@ header {
 }
 .habit-title {
   margin-bottom: 6px;
+}
+
+/* Run Extra mile */
+#run-extra-mile {
+  background-color: var(--primary-bg-color);
+}
+.run-extra-mile-context {
+  position: relative;
+  background-color: var(--secondary-bg-color);
+  padding: 40px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
+}
+
+.run-extra-mile-context > .text-sec {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.run-extra-mile-context > .run-img {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #e6533c;
+  object-fit: cover;
+}
+.run-img > img {
+  position: relative;
+  width: 100%;
+  height: 190%;
+  border-radius: 12px;
+  object-fit: fill;
+}
+.run-btn {
+  padding: 15px 60px;
+}
+/* Training and Exercise */
+#training-and-exercises {
+  background-color: var(--primary-bg-color);
+}
+.training-context {
+}
+.img-grid-gallry {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.one {
+  position: relative;
+  grid-column: span 3;
+  /* height: 200px; */
+  background: linear-gradient(red, yellow);
+}
+.one::before,
+.two::before,
+.three::before,
+.four::before,
+.five::before,
+.six::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(247, 5, 5, 0.315);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.two {
+  position: relative;
+  grid-column: span 6;
+}
+.two::before {
+  background-color: rgba(247, 183, 5, 0.253);
+}
+.three::before {
+  background-color: rgba(142, 247, 5, 0.253);
+}
+.four::before {
+  background-color: rgba(5, 247, 247, 0.253);
+}
+.five::before {
+  background-color: rgba(5, 61, 247, 0.253);
+}
+.six::before {
+  background-color: rgba(150, 5, 247, 0.253);
+}
+.three {
+  position: relative;
+  grid-column: span 3;
+}
+.four {
+  position: relative;
+  grid-column: span 5;
+}
+.five {
+  position: relative;
+  grid-column: span 3;
+}
+.six {
+  position: relative;
+  grid-column: span 4;
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
