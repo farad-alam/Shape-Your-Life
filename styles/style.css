@@ -300,12 +300,20 @@ header {
   background-color: var(--primary-bg-color);
 }
 .training-context {
+  padding-top: 100px;
+}
+.exercise-desc {
+  margin-top: 10px;
+  padding-right: 280px;
 }
 .img-grid-gallry {
   width: 100%;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+.img-grid-gallry div {
+  height: 200px;
 }
 .grid-img {
   width: 100%;
@@ -315,7 +323,6 @@ header {
 .one {
   position: relative;
   grid-column: span 3;
-  /* height: 200px; */
   background: linear-gradient(red, yellow);
 }
 .one::before,
@@ -372,4 +379,55 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* BMI Calculator */
+#bmi-calculator {
+  padding-top: 70px;
+  background-color: var(--primary-bg-color);
+}
+.cal-intro {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.calculator-func {
+  margin-top: 70px;
+  background-color: var(--secondary-bg-color);
+  padding: 40px 0;
+}
+.calculator-func-context {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+.chart {
+  /* background-color: #e6533c; */
+}
+.chart h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.calculator {
+  /* background-color: aqua; */
+  padding-left: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders do not have spacing */
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid var(--hero-bg-2); /* Adds borders to table cells */
+  text-align: center; /* Centers text in both headers and data cells */
+  padding: 10px; /* Adds padding for better spacing */
+  font-weight: 100;
+}
+
+th {
+  font-weight: bold; /* Makes header text bold */
+  /* Optional: Add a light background to the header */
 }
